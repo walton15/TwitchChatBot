@@ -66,7 +66,6 @@ function triviaEventHandler(target, context, msg, self) {
       if (commandName === potentialAns[i]) {
           if (commandName === `!${correctLetter}` || commandName === `!${correctLetter.toLowerCase()}`) {
             client.say(target, `You're correct!`);
-            console.log(`$!{correctLetter.toLowerCase()}`);
           }
           else {
             client.say(target, `You're wrong. The correct answer was ${correctLetter}`);
